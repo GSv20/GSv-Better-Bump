@@ -1,5 +1,5 @@
 # Bump-Bot
-**Discord.js Server Bump Bot (v12) / Server Advertise Bot**
+**Discord.js Server Bump Bot NOT SUPPORTED!!!!!!!!!!**
 
 [![widget](https://discord.com/api/guilds/553942677117337600/widget.png?style=banner2)](https://discord.gg/Emk2udJ)
 
@@ -63,8 +63,3 @@ Note: the default prefix is %. You can change this in the [dbInit File](https://
 | Bump | Setup | Preview|
 | - | - | -|
 |![Bump Message](examples/bump.png)|![Set Your Add](examples/setup.png)|![Check Your Add](examples/preview.png)|
-
-# 📋 Contributions 
-<a href="https://github.com/DragonCat4012/chia/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DragonCat4012/Bump-Bot" />
-</a>
