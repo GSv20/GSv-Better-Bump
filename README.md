@@ -55,7 +55,7 @@ Logging in...                            index.js:98
  > 🗸 Server Cache                        database/dbInit.js:50
  > 🗸 Cached Database Entries             index.js:71
  >  Logged in as: Tenshi#3639            index.js:118
-.• ΛΚΘRΛ SΤUDΙΘS •.   >>>  bumped!
+.• GSv2.0 •.   >>>  bumped!
 ```
 
 # 📸 Showcase
