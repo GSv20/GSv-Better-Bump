@@ -1,7 +1,7 @@
 # Bump-Bot
 **Discord.js Server Bump Bot NOT SUPPORTED!!!!!!!!!!**
 
-[![widget](https://discord.com/api/guilds/553942677117337600/widget.png?style=banner2)](https://discord.gg/Emk2udJ)
+[![widget](https://discord.com/api/guilds/1038267876622221332/widget.png?style=banner2)](https://discord.gg/ufEjGrbYWw)
 
 # ⚙️ Setup
 ## 🔧 Configuration
