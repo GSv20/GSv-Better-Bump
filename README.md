@@ -15,10 +15,10 @@
 
 ## 🤖 Example Setup
 > ```JS
-> const supportGuildId = '553942677117337600'
-> const supportGuildLogChannelId = '753474865104683110'
-> const Bottoken = 'NzA3NTQ4MDadsfghijklmnzY5.NzA3NTQ4MDMopqrstzMjA4NzY5FSDFSDf.sdf21'
-> const ownerID = "586905336850677760"
+> const supportGuildId = '1038267876622221332'
+> const supportGuildLogChannelId = '1216835952870428793'
+> const Bottoken = 'Your Bot Token'
+> const ownerID = "696282645100888086"
 > ```
 
 ## 🌿 Run
