@@ -17,12 +17,10 @@ const emotes = {
     user: '👤'
 }
 
-const supportGuildId = ''
-const supportGuildLogChannelId = ''
-//Specify your bot token
+const supportGuildId = '1038267876622221332'
+const supportGuildLogChannelId = '1216835952870428793'
 const Bottoken = ''
-// Insert here your userid if you wnat to use the status command
-const ownerID = ""
+const ownerID = "696282645100888086"
 
 
 const rawEmb = () => {
@@ -39,17 +37,10 @@ client.supportGuildLogChannelId = supportGuildLogChannelId
 
 if (!Bottoken) throw new Error('Please enter a Bot Token!');
 
-//==================================================================================================================================================
-//Loading Things
-//==================================================================================================================================================
 const { Server, syncDatabase } = require('./database/dbInit');
 var server_cache = new Collection();
 
 Reflect.defineProperty(server_cache, "getGuild", {
-    /**
-     * @param {number} id Guild ID
-     * @returns {Model} new User
-     */
     value: async function (id) {
         var guild = server_cache.get(id);
         if (!guild) guild = await Server.findOne({ where: { key: id } });
@@ -62,11 +53,7 @@ Reflect.defineProperty(server_cache, "getGuild", {
 });
 
 Reflect.defineProperty(server_cache, "getChannel", {
-    /**
-     *  @param {number} id Channel ID
-     * @returns {Model} new User
-     */
-    value: async function () {
+ync function () {
         let arr = []
         var channels = await Server.findAll();
         channels.forEach(entry => arr.push(entry.channel))
@@ -74,7 +61,6 @@ Reflect.defineProperty(server_cache, "getChannel", {
     }
 });
 
-//Sync
 const initDatabase = async () => {
     await syncDatabase();
 
@@ -90,9 +76,6 @@ const initDatabase = async () => {
     }
 }
 client.database = { server_cache };
-//==================================================================================================================================================
-//Initialize the Commands
-//==================================================================================================================================================
 client.commands = new Discord.Collection();
 
 const commandFiles = fs
@@ -103,9 +86,6 @@ for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
 }
-//==================================================================================================================================================
-//Starting the Bot
-//==================================================================================================================================================
 const start = async () => {
     try {
         console.log("Logging in...");
@@ -137,7 +117,7 @@ client.on("ready", () => {
     if (!supportGuildId) throw new Error('Please enter your Support-Guild-ID')
     if (!supportGuildLogChannelId) throw new Error('Please enter your Support-Guild-Log-Channel-ID')
     console.log(" >  Logged in as: " + client.user.tag);
-    client.user.setPresence({ activity: { name: "Bump your server", type: 'PLAYING' }, status: 'idle' });
+    client.user.setPresence({ activity: { name: "Powered by GSv ⚡", type: 'PLAYING' }, status: 'idle' });
 });
 
 client.on('guildMemberAdd', async member => {
@@ -147,8 +127,7 @@ client.on('guildMemberAdd', async member => {
     let ch = await guild.channels.resolve(settings.wlc)
     if (!ch) {
         settings.wlc = undefined
-        return settings.save()
-    }
+        return settings.save()}
     let emb = rawEmb().setTitle('Member Joined').setDescription(`${member} joined **${guild.name}**! Welcome you'r member No. **${guild.memberCount}**`)
     ch.send(emb).catch(() => { })
 })
